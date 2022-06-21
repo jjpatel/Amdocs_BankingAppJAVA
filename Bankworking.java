@@ -7,7 +7,7 @@ public class Bankworking {
 		
 		Scanner sc = new Scanner(System.in);
 		
-        System.out.print("How many number of customers do you want to input? ");  
+        System.out.print("\nHow many number of customers do you want to input? ");  
         int n = sc.nextInt();  
         Bank C[] = new Bank[n];  
         for (int i = 0; i < C.length; i++) {  
@@ -19,7 +19,7 @@ public class Bankworking {
         do {  
             System.out.println("\n ***Banking System Application***");  
             System.out.println("1. Display all account details \n 2. Search by Account number\n 3. Deposit the amount \n 4. Withdraw the amount \n 5.Exit ");  
-            System.out.println("Enter your choice: ");  
+            System.out.println("\n Enter your choice: ");  
             choice = sc.nextInt();  
                 switch (choice) {  
                     case 1:  
@@ -28,7 +28,7 @@ public class Bankworking {
                         }  
                         break;  
                     case 2:  
-                        System.out.print("Enter account no. you want to search: ");  
+                        System.out.print("\nEnter account no. you want to search: ");  
                         String ac_no = sc.next();  
                         boolean found = false;  
                         for (int i = 0; i < C.length; i++) {  
@@ -38,11 +38,11 @@ public class Bankworking {
                             }  
                         }  
                         if (!found) {  
-                            System.out.println("Search failed! Account doesn't exist..!!");  
+                            System.out.println("\nSearch failed! Account doesn't exist..!!");  
                         }  
                         break;  
                     case 3:  
-                        System.out.print("Enter Account no. : ");  
+                        System.out.print("\nEnter Account no. : ");  
                         ac_no = sc.next();  
                         found = false;  
                         for (int i = 0; i < C.length; i++) {  
@@ -53,11 +53,11 @@ public class Bankworking {
                             }  
                         }  
                         if (!found) {  
-                            System.out.println("Search failed! Account doesn't exist..!!");  
+                            System.out.println("\nSearch failed! Account doesn't exist..!!");  
                         }  
                         break;  
                     case 4:  
-                        System.out.print("Enter Account No : ");  
+                        System.out.print("\nEnter Account No : ");  
                         ac_no = sc.next();  
                         found = false;  
                         for (int i = 0; i < C.length; i++) {  
@@ -68,11 +68,11 @@ public class Bankworking {
                             }  
                         }  
                         if (!found) {  
-                            System.out.println("Search failed! Account doesn't exist..!!");  
+                            System.out.println("\nSearch failed! Account doesn't exist..!!");  
                         }  
                         break;  
                     case 5:  
-                        System.out.println("Thank you for using our Application");  
+                        System.out.println("\nThank you for using our Application");  
                         break;  
                 }  
             }  
@@ -81,4 +81,3 @@ public class Bankworking {
 		
 
 	}
-
