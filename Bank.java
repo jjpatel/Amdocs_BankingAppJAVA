@@ -28,11 +28,13 @@ public class Bank {
 	}
 	
 	void displayAccount() {
+		/*
 		System.out.println("\nAccount No : "+ accNo);
 		System.out.println("Name : "+ fname + " " + lname);
 		System.out.println("Address : "+ address);
 		System.out.println("Account Type : "+ accType);
-		System.out.println("Balance : "+ balance);
+		System.out.println("Balance : "+ balance);*/
+		System.out.println(accNo + " \t" + fname + " \t" + lname+ " \t" + address+ " \t\t" + accType+ " \t" + balance);
 	}
 	
 	void deposit() {
